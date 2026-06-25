@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdoyOK_2411 - Linktree Clone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-wrapper {
+            margin-bottom: 24px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background-color: #000;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        .bio {
+            font-size: 15px;
+            color: #e2e8f0;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 16px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            position: absolute;
+            left: 24px;
+        }
+
+        .link-text {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-wrapper">
+            <!-- Menggunakan placeholder logo mahkota hitam/putih mirip screenshot -->
+            <img class="profile-img" src="https://i.ibb.co.com/23QYYfKq/1782387930467.png" alt="Profile Logo">
+            <h1 class="username">IdoyOK_2411</h1>
+            <p class="bio">Content Creator & Web Developer. Temukan semua link penting saya di bawah ini! 👇</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links-container">
+            
+            <!-- Support Me -->
+            <a href="https://saweria.co/idoyook" class="link-card">
+                <img class="link-icon" src="https://i.ibb.co.com/vC9LJ2ZJ/20260625-203621.png" alt="Support Me">
+                <span class="link-text">Support Me</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/yandiwijaya24?igsh=MXR0eTQyZWFyYTc1aA==" class="link-card">
+                <img class="link-icon" src="https://img.icons8.com/fluent/48/instagram-new.png" alt="Instagram">
+                <span class="link-text">Instagram</span>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@idoyokk?_r=1&_t=ZS-97VMTzGyo24" class="link-card">
+                <img class="link-icon" src="https://img.icons8.com/color/48/tiktok.png" alt="TikTok">
+                <span class="link-text">TikTok</span>
+            </a>
+
+            <!-- MayDay RP -->
+            <a href="https://discord.gg/YnR7RCkW2m" class="link-card">
+                <img class="link-icon" src="https://i.ibb.co.com/m5jmHxnB/1782395183122.png" alt="MayDay Logo">
+                <span class="link-text">MayDay RP</span>
+            </a>
+
+            <!-- Boemi Pertiwi RP -->
+            <a href="https://discord.gg/7ZtUvyDtCe" class="link-card">
+                <img class="link-icon" src="https://i.ibb.co.com/v4wcg5Yy/1782395523753.png" alt="Boemi Pertiwi Logo">
+                <span class="link-text">Boemi Pertiwi RP</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
