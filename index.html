@@ -24,14 +24,18 @@
 
         #bg-video {
             position: fixed;
-            right: 0;
-            bottom: 0;
+            
+            /* Posisikan video tepat di tengah layar */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             min-width: 100%;
             min-height: 100%;
             width: auto;
             height: auto;
+            object-fit: cover; 
+            
             z-index: -1;
-            object-fit: cover;
         }
 
         .container {
@@ -39,7 +43,7 @@
             max-width: 480px;
             text-align: center;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0);
             backdrop-filter: blur(5px);
             border-radius: 20px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
