@@ -13,12 +13,25 @@
         }
 
         body {
-            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
             display: flex;
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
             padding: 40px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
         }
 
         .container {
@@ -26,6 +39,11 @@
             max-width: 480px;
             text-align: center;
             padding: 20px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
 
         .profile-wrapper {
@@ -100,10 +118,13 @@
 </head>
 <body>
 
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="video1.mp4" type="video/mp4">
+    </video>
+
     <div class="container">
         <!-- Profile Section -->
         <div class="profile-wrapper">
-            <!-- Menggunakan placeholder logo mahkota hitam/putih mirip screenshot -->
             <img class="profile-img" src="https://i.ibb.co.com/sprK14Wj/IMG-20260802-220151.jpg" alt="Profile Logo">
             <h1 class="username">IdoyOK_2411</h1>
             <p class="bio">Content Creator, Editor, & Gamer. Find the links you need below, and please support me👇 Thank you.</p>
@@ -111,49 +132,40 @@
 
         <!-- Links Section -->
         <div class="links-container">
-            
-            <!-- Support Me -->
             <a href="https://saweria.co/idoyook" class="link-card">
                 <img class="link-icon" src="https://i.ibb.co.com/vC9LJ2ZJ/20260625-203621.png" alt="Support Me">
                 <span class="link-text">Support Me</span>
             </a>
 
-            <!-- Instagram -->
             <a href="https://www.instagram.com/yandiwijaya24?igsh=MXR0eTQyZWFyYTc1aA==" class="link-card">
                 <img class="link-icon" src="https://img.icons8.com/fluent/48/instagram-new.png" alt="Instagram">
                 <span class="link-text">Instagram</span>
             </a>
 
-            <!-- TikTok -->
             <a href="https://www.tiktok.com/@idoyokk?_r=1&_t=ZS-97VMTzGyo24" class="link-card">
                 <img class="link-icon" src="https://img.icons8.com/color/48/tiktok.png" alt="TikTok">
                 <span class="link-text">TikTok</span>
             </a>
 
-            <!-- Creator CapCut -->
             <a href="https://mobile.capcutshare.com/sv2/ZSCjkFEx7/" class="link-card">
                 <img class="link-icon" src="https://i.ibb.co.com/60B5D2Ly/1782435950794.png" alt="MayDay Logo">
                 <span class="link-text">My Template</span>
             </a>
 
-            <!-- Mayday RP -->
-            <a href="https://discord.gg/janPFvtCRJ" class="link-card">
+            <a href="https://discord.gg/KPZcMRf5DZ" class="link-card">
                 <img class="link-icon" src="https://i.ibb.co.com/FLwZ3Y6h/1782395183122.png" alt="MayDay's Logo">
                 <span class="link-text">Mayday RP</span>
             </a>
 
-            <!-- Waktu Indonesia Beroleplay-->
             <a href="https://discord.gg/xFC4BC2n3Z" class="link-card">
                 <img class="link-icon" src="https://i.ibb.co.com/n8kbyWLn/Proyek-Baru-22-00-BDE31.png" alt="Boemi Pertiwi's Logo">
                 <span class="link-text">Waktu Indonesia RP</span>
             </a>
 
-            <!-- Boemi Pertiwi RP -->
             <a href="https://discord.gg/7ZtUvyDtCe" class="link-card">
                 <img class="link-icon" src="https://i.ibb.co.com/v4wcg5Yy/1782395523753.png" alt="Boemi Pertiwi's Logo">
                 <span class="link-text">Boemi Pertiwi RP</span>
             </a>
-
         </div>
     </div>
 
